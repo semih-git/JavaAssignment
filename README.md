@@ -1,3 +1,3 @@
 # JavaAssignment
-my java assignment for codingbook.
-hello world :))
+My Java assignments are here.
+I am waiting for your valuable comments and opinions.
