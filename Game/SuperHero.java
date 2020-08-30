@@ -33,7 +33,7 @@ public class SuperHero {
 
     public SuperHero(String name) {
         this.name = name;
-        this.health = 100;
+        this.health = 10;
         this.dead =false;
         System.out.println(this.name+" is created.. Health state "+this.health+" ");
 
@@ -41,12 +41,14 @@ public class SuperHero {
     }
     public void attack (SuperHero rakip){
         Random randomGenerator = new Random();
-        int damage = randomGenerator.nextInt(11);
+        int damage = randomGenerator.nextInt(4);
         rakip.stateOfHealth(damage);
 
+
         System.out.print(this.getName()+" attack.("+damage+") --> " +
-                rakip.getName()+ "'s remaining health "+rakip.getHealth()+" ");
-        rakip.repeat(health);
+                rakip.getName()+ "'s remaining health ("+rakip.getHealth()+") - ");
+
+        rakip.repeat(rakip.getHealth());
         System.out.println();
 
     }
@@ -59,9 +61,8 @@ public class SuperHero {
         }
     }
     public void repeat(int health){
-        for (int i = 0; i <=health ; i++) {
-            System.out.print("*");
-            i++;
+        for (int i = 1; i <=health ; i++) {
+            System.out.print("(*)");
         }
     }
 }

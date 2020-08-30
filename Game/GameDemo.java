@@ -20,12 +20,12 @@ public class GameDemo {
 //             you can Thread - multithread used.
             player1.attack(player2);
             if(player2.isDead()){
-                System.out.println(">>>>>"+player2.getName()+" is dead... "+player1Name+" won!");
+                System.out.println(">>>>>>>>"+player2.getName()+" is dead... "+player1Name+" won! <<<<<<<<<");
                 break;
             }
             player2.attack(player1);
             if(player1.isDead()){
-                System.out.println(">>>>>"+player1.getName()+" is dead... "+player2Name+" won! <<<<<<");
+                System.out.println(">>>>>>>>"+player1.getName()+" is dead... "+player2Name+" won! <<<<<<<<<");
                 break;
             }
 
