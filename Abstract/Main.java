@@ -5,6 +5,12 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+        //SOLID
+        //Single Responsibility.
+        //open-closed.
+        //liskov substition.
+        //interface segregation.
+        //dependency inversion (NOT INJECTION)
         ArrayList<IReadable> books = new ArrayList<>();
 
         MathBook mathBook = new MathBook();
@@ -24,6 +30,8 @@ public class Main {
         notebooks.add(historyNB);
         GeographyNB geographyNB = new GeographyNB();
         notebooks.add(geographyNB);
+        ChemNB chemNB = new ChemNB();
+        notebooks.add(chemNB);
 
         for (Writeable notebook: notebooks)
             System.out.println(notebook.write());
